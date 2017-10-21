@@ -13,3 +13,5 @@ p2 = Product.create!(item: 'Sprite', price: 0.50, allergens: 'N/A', quantity: 50
 p3 = Product.create!(item: 'Plum Organics: Pear, Spinach & Pea', price: 1.99, allergens: 'Milk', quantity: 50, image: 'https://www.images-iherb.com/l/PLO-00119-7.jpg')
 
 s1 = ShoppingCartItem.create!(prod_qty: 2, user_id: u1.id, product_id: p1.id)
+s2 = ShoppingCartItem.create!(prod_qty: 3, user_id: u1.id, product_id: p2.id)
+s3 = ShoppingCartItem.create!(prod_qty: 2, user_id: u1.id, product_id: p3.id)

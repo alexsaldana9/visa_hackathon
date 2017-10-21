@@ -4,7 +4,11 @@ class ShoppingCartItemsController < ApplicationController
   # GET /shopping_cart_items
   # GET /shopping_cart_items.json
   def index
-    @shopping_cart_items = ShoppingCartItem.all
+    # @shopping_cart_items = ShoppingCartItem.all
+    # @shopping_cart_items = ShoppingCartItem.all.includes(:product)
+    @shopping_cart_items = ShoppingCartItem.includes(:product)
+
+
   end
 
   # GET /shopping_cart_items/1
