@@ -18,6 +18,12 @@ img {
     width: 100px;
 }
 
+td {
+    font-size: medium;
+    /*text-align:center;*/
+
+}
+
 .col-med-3 p {
     font-size: 14px;
 }

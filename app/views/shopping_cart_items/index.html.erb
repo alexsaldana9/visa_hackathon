@@ -19,8 +19,9 @@
         <td>
           <img class="card-img-top">
           <%= image_tag item.product.image %>
+          <%= item.product.item %>
         </td>
-        <td><%= item.product.item %></td>
+        <!--<td><%= item.product.item %></td>-->
         <td>$<%= item.product.price %></td>
       </tr>
     <% end %>
