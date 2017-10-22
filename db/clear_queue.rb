@@ -9,12 +9,7 @@ conn.start
 ch   = conn.create_channel
 x    = ch.topic("matrix")
 
-x.publish("add,1")
-x.publish("add,2")
-x.publish("remove,2")
-x.publish("remove,2")
-x.publish("checkout,2")
-
+x.publish("checkout,0", routing_key: "cart_events_key")
 
 puts " [x] Sent msg"
 
