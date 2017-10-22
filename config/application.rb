@@ -14,5 +14,11 @@ module VisaHackathon
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.after_initialize do
+      Thread.new do
+        ApplicationHelper.listen_to_shopping_cart
+      end
+    end
   end
 end

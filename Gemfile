@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0.beta'
 
+gem 'bunny', '~> 2.4'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
