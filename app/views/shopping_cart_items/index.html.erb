@@ -1,6 +1,28 @@
+<script type="text/javascript">
+    function onVisaCheckoutReady(){
+        V.init( {
+            apikey: "2EYRS5MR8YGXZXCKSOWF21kAYVQ0_OiZXaswp2fWeZPhNu2m8",
+            paymentRequest:{
+                currencyCode: "USD",
+                subtotal: "11.00"
+            }
+        });
+        V.on("payment.success", function(payment)
+        {alert(JSON.stringify(payment)); });
+        V.on("payment.cancel", function(payment)
+        {alert(JSON.stringify(payment)); });
+        V.on("payment.error", function(payment, error)
+        {alert(JSON.stringify(error)); });
+    }
+</script>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Shopping Cart Items</h1>
+
+<img alt="Visa Checkout" class="v-button" role="button"
+     src="https://sandbox.secure.checkout.visa.com/wallet-services-web/xo/button.png"/>
+
 
 <table table class="table table-striped">
   <thead>
@@ -38,4 +60,9 @@
         window.location.reload(true);
     }
     setTimeout(refresh, 1000 * 1000);
+</script>
+
+<script type="text/javascript"
+        src="https://sandbox-assets.secure.checkout.visa.com/
+checkout-widget/resources/js/integration/v1/sdk.js">
 </script>

@@ -6,10 +6,22 @@ class ShoppingCartItemsController < ApplicationController
   def index
     # @shopping_cart_items = ShoppingCartItem.all
     # @shopping_cart_items = ShoppingCartItem.all.includes(:product)
-    @shopping_cart_items = ShoppingCartItem.includes(:product)
+    @shopping_cart_items = ShoppingCartItem.includes(:product, :user)
+
+    # add_product(product)
 
 
   end
+
+  # def add_product(product)
+  #   if shopping_cart_item = self.shopping_cart_item.find_by_product_id(product.id)
+  #     shopping_cart_item.quantity += 1
+  #     shopping_cart_itemt.save
+  #     shopping_cart_item
+  #   else
+  #     self.shopping_cart_item.create(:product_id => product.id, :quantity => 1)
+  #   end
+  # end
 
   # GET /shopping_cart_items/1
   # GET /shopping_cart_items/1.json
