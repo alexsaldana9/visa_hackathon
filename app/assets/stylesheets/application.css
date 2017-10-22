@@ -27,6 +27,20 @@ td {
     vertical-align: middle;
 }
 
+.visaBTN {
+    float: right;
+    padding: 1em;
+}
+
+.visaBTN H1 {
+    float: left;
+    text-align: left;
+}
+
+.visaBTN img {
+    width: 300px;
+}
+
 
 .price {
     padding-top: 60px;
