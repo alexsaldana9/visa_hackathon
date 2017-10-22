@@ -23,6 +23,14 @@ td {
     /*text-align:center;*/
 
 }
+.table td{
+    vertical-align: middle;
+}
+
+
+.price {
+    padding-top: 60px;
+}
 
 .col-med-3 p {
     font-size: 14px;
