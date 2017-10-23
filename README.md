@@ -1,24 +1,24 @@
-# README
+# To run project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version - ruby 2.3.3
 
-Things you may want to cover:
+`` $ rails db:create``
 
-* Ruby version
+`` $ rails db:migrate``
 
-* System dependencies
+`` $ rails db:seed``
 
-* Configuration
+`` $ rails s``
 
-* Database creation
+Must have TCP connection, in order for queue to work
+To send products 
 
-* Database initialization
+ `` $ ruby push_to_queue.rb ``
+ 
+To remove products
 
-* How to run the test suite
+ `` $ ruby remove_from_queue.rb ``
+ 
+ 
+ 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
