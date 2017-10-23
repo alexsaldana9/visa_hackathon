@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'shopping_cart_items#index'
+
   resources :shopping_cart_items
   resources :users
   resources :products
